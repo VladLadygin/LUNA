@@ -7,10 +7,9 @@ const HelloVueApp = {
 
         }
     },
-    created() {
+    mounted() {
         this.link_with_token = window.location.href;
-        console.log(window.location.href)
-        console.log(this.link_with_token)
+        console.log(this.link_with_token);
     },
     methods: {
         registracia_vk() {
