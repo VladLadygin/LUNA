@@ -7,7 +7,7 @@ const HelloVueApp = {
 
         }
     },
-    mounted() {
+    created() {
         this.link_with_token = window.location.href;
         console.log(this.link_with_token);
         console.log('КВААА');
