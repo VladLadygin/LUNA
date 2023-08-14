@@ -28,7 +28,7 @@ const HelloVueApp = {
                 if (response.session) {
                     // пользователь авторизован
                     console.log('Пользователь авторизован');
-                  
+                    console.log(response);
                 } else {
                     // пользователь не авторизован
                     console.log('Пользователь не авторизован');
