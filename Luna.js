@@ -24,7 +24,7 @@ const HelloVueApp = {
             window.location.href = this.link_on_registration;
         },
         auth() {
-            VK.Api.call('friends.get', {fields: 'photo_100', order: 'ints',  v:"5.73"}, function(response) {
+            VK.Api.call('friends.get', {fields: 'photo_100', order: 'ints',  v:"5.9"}, function(response) {
                 console.log(response);
               });
               
