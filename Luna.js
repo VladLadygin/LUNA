@@ -24,16 +24,10 @@ const HelloVueApp = {
             window.location.href = this.link_on_registration;
         },
         auth() {
-            VK.Auth.login(function (response) {
-                if (response.session) {
-                    // пользователь авторизован
-                    console.log('Пользователь авторизован');
-                    console.log(response);
-                } else {
-                    // пользователь не авторизован
-                    console.log('Пользователь не авторизован');
-                }
-            });
+            VK.Api.call('friends.get', {fields: 'photo_100', order: 'ints',  v:"5.73"}, function(response) {
+                console.log(response);
+              });
+              
         }
     }
 }
