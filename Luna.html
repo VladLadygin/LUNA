@@ -13,11 +13,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Poppins:ital,wght@1,200&display=swap"
         rel="stylesheet">
+    <script src="https://vk.com/js/api/openapi.js?169" type="text/javascript"></script>
 </head>
 
 
 <body>
-    
+
     <div class="cont" id="all">
         <div class="conteiner_1">
             <div class="header_cont">
@@ -44,6 +45,7 @@
                 <button type="button" class="btn btn-primary">
                     export to console
                 </button>
+                <button v-on:click="auth()">ква</button>
             </div>
         </div>
     </div>
@@ -53,6 +55,11 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
     <script src="Luna.js"></script>
+    <script type="text/javascript">
+        VK.init({
+          apiId: 51696427
+        });
+      </script>
 </body>
 
 </html>
