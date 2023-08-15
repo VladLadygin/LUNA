@@ -25,16 +25,18 @@
                 <p class="header_text">FRIENDS IN VK</p>
             </div>
             <div class="middle_cont">
-                <div class="slot_for_friends" v-if="show_friends" v-for="item in jsonobject.response.items"
-                    :key="item.id">
-                    <p>{{item.first_name}}</p>
-                    <div class="foto_friends">
-                        <img src="\\wsl.localhost\Ubuntu\home\vlad12345\LUNA\соц карта 2.jpg">
+                <div v-if="show_friends">
+                    <div class="slot_for_friends" v-for="item in jsonobject.response.items"
+                        :key="item.id">
+                        <p>{{item.first_name}}</p>
+                        <div class="foto_friends">
+                            <img src="\\wsl.localhost\Ubuntu\home\vlad12345\LUNA\соц карта 2.jpg">
 
-                    </div>
-                    <div class="name_surname_friends">
-                        <p class="name_friend">Владислав</p>
-                        <p class="surname_friend">Ладыгин</p>
+                        </div>
+                        <div class="name_surname_friends">
+                            <p class="name_friend">Владислав</p>
+                            <p class="surname_friend">Ладыгин</p>
+                        </div>
                     </div>
                 </div>
 
