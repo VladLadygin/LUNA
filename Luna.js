@@ -1,7 +1,7 @@
 const HelloVueApp = {
     data() {
         return {
-            jsonobject: null
+            jsonobject: {}
         }
     },
     methods: {
