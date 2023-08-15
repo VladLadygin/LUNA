@@ -25,8 +25,18 @@
                 <p class="header_text">FRIENDS IN VK</p>
             </div>
             <div class="middle_cont">
-                <p>Тут будет список всех друзей</p>
-            </div>
+                <div class="slot_for_friends" v-for="item in jsonobject.response.items" :key="item.id">
+                    <p>{{item.first_name}}</p>
+                    <div class="foto_friends">
+                        <img src="\\wsl.localhost\Ubuntu\home\vlad12345\LUNA\соц карта 2.jpg">
+
+                    </div>
+                    <div class="name_surname_friends">
+                        <p class="name_friend">Владислав</p>
+                        <p class="surname_friend">Ладыгин</p>
+                    </div>
+                </div>
+            
             <div class="btn_cont">
                 <button type="button" class="btn btn-primary" v-on:click="auth">
                     login in
@@ -56,9 +66,9 @@
     <script src="Luna.js"></script>
     <script type="text/javascript">
         VK.init({
-          apiId: 51696427
+            apiId: 51696427
         });
-      </script>
+    </script>
 </body>
 
 </html>

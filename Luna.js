@@ -1,16 +1,16 @@
 const HelloVueApp = {
     data() {
         return {
-            json_object: ''
+            jsonobjects: null
         }
     },
     methods: {
         auth() {
-            VK.Api.call('friends.get', {fields: 'photo_100', order: 'hints',  v:'5.131'}, function(response) {
-                this.json_object = response;
+            VK.Api.call('friends.get', { fields: 'photo_100', order: 'hints', v: '5.131' }, function (response) {
+                this.jsonobject = response;
                 console.log(this.json_object);
-              });
-              
+            });
+
         }
     }
 }
