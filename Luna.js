@@ -1,7 +1,8 @@
 const HelloVueApp = {
     data() {
         return {
-            jsonobject: {"response":{"count":120,"items":[]}}
+            jsonobject: {"response":{"count":120,"items":[{"id": 0,
+            "first_name": "Ваше имя"}]}}
         }
     },
     methods: {
