@@ -11,9 +11,8 @@ const HelloVueApp = {
                 this.jsonobject = JSON.parse(response);
                 console.log(this.jsonobject);
                 console.log(response);
-                console.log(this.show_friends);
-            });
-            this.show_friends = true;
+                this.show_friends = true;
+            })
             console.log(this.show_friends);
         }
     }
