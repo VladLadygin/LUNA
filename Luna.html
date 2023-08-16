@@ -18,6 +18,7 @@
 
 
 <body>
+    
 
     <div class="cont" id="all">
         <div class="conteiner_1">
@@ -28,17 +29,17 @@
                 <div v-if="show_friends">
                     <div class="slot_for_friends" v-for="item in jsonobject.response.items"
                         :key="item.id">
-                        <p>{{item.first_name}}</p>
                         <div class="foto_friends">
-                            <img src="\\wsl.localhost\Ubuntu\home\vlad12345\LUNA\соц карта 2.jpg">
-
+                            <img :src='item.photo_100'>
                         </div>
                         <div class="name_surname_friends">
-                            <p class="name_friend">Владислав</p>
-                            <p class="surname_friend">Ладыгин</p>
+                            <p class="name_friend">{{item.first_name}}</p>
+                            <p class="surname_friend">{{item.last_name}}</p>
                         </div>
                     </div>
                 </div>
+            </div>
+                
 
                 <div class="btn_cont">
                     <button type="button" class="btn btn-primary" v-on:click="auth">
