@@ -40,9 +40,11 @@
                 
 
                 <div class="btn_cont">
-                    <button type="button" class="btn btn-primary" v-on:click="auth" v-if="vk_button_seen">
+                    <template v-if="vk_button_seen">  
+                    <button type="button" class="btn btn-primary" v-on:click="auth" >
                         login in
                     </button>
+                </template>
                 </div>
             </div>
 
