@@ -1,7 +1,7 @@
 const HelloVueApp = {
     data() {
         return {
-            jsonobject: {},
+            jsonobject: null,
             show_friends: false
         }
     },
@@ -16,6 +16,9 @@ const HelloVueApp = {
                 console.log(this.show_friends);
             })
         }
+    },
+    mounted() {
+        this.auth();
     }
 }
 
