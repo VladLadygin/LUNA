@@ -16,6 +16,7 @@ const HelloVueApp = {
         },
         ppp() {
             this.show_friends = true;
+            console.log(this.jsonobject);
             console.log(this.show_friends);
 
         }
