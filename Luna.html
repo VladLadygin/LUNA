@@ -18,8 +18,6 @@
 
 
 <body>
-    
-
     <div class="cont" id="all">
         <div class="conteiner_1">
             <div class="header_cont">
@@ -42,10 +40,9 @@
                 
 
                 <div class="btn_cont">
-                    <button type="button" class="btn btn-primary" v-on:click="auth">
+                    <button type="button" class="btn btn-primary" v-on:click="auth" v-if="vk_button_seen">
                         login in
                     </button>
-                    <button v-on:click="ppp">+++</button>
                 </div>
             </div>
 
@@ -75,5 +72,4 @@
             });
         </script>
 </body>
-
 </html>
